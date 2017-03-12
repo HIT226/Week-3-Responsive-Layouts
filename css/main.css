@@ -14,8 +14,37 @@ website: {portfolio}
 /*
   Basic colours and margins to seperate items should go here
 */
-
-
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: #2196F3;
+}
+.content{
+  margin: 15px;
+}
+.content__main,
+.content__related,
+.content__footer {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+}
 /*
   Media query should go here
 */
+@media screen and (min-width: 600px) {
+  .content__main {
+    float: right;
+    width: 73%;
+  }
+
+  .content__related {
+    float: left;
+    width: 25%;
+  }
+
+  .content__footer {
+    clear: both;
+  }
+}
